@@ -13,9 +13,8 @@ const Home = () => {
     <div>
       <Header />
       <Contract />
-      <Up />
       <Case />
-
+      <Up />
       <Ticker />
       <News />
       <Client />

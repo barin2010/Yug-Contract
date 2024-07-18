@@ -5,6 +5,7 @@
   );
   height: 356px;
   min-width: 360px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +55,8 @@
       url('../../images/header/Banner_Desc.jpg') 1x,
       url('../../images/header/Banner_Desc@2x.jpg') 2x
     );
-    width: 1920px;
+
+    max-width: 1920px;
     height: 634px;
     padding-bottom: 40px;
   }

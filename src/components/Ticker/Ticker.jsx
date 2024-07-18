@@ -42,7 +42,7 @@ const Ticker = () => {
 
   return (
     <div>
-      <section>
+      <section className={css.ticker}>
         <div className={css.containerTicker}>
           <div className={css.imgContainer} ref={imgContainer1Ref}>
             <img className={css.img} src={samsung} alt="samsung" />

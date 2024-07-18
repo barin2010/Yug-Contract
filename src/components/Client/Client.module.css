@@ -1,5 +1,6 @@
 .client {
   padding-bottom: 264px;
+  margin:0 auto;
 }
 .wrapper {
   background-color: var(--light-grey);

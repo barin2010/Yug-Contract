@@ -1,3 +1,7 @@
+.case {
+  margin: 0 auto;
+}
+
 .containerCase {
   padding-right: 32px;
   width: 100%;
@@ -112,7 +116,6 @@
   transition: all ease-in 0.5;
   transition-duration: var(--my-transition-duration);
 }
-
 
 .caseWash {
   width: 100%;
