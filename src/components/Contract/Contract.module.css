@@ -1,0 +1,133 @@
+.wrapper {
+  padding: 72px 0;
+}
+.wrapperTitle {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.09;
+  letter-spacing: 0.05em;
+  color: var(--primary-font-color-3A4551);
+  padding-bottom: 42px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.contractGrid {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr); */
+  grid-template-areas:
+    'a b'
+    'c d'
+    'e e'
+    'e e';
+}
+.gridlist1 {
+  grid-area: a;
+}
+.gridlist2 {
+  grid-area: b;
+}
+.gridlist3 {
+  grid-area: c;
+}
+.gridlist4 {
+  grid-area: d;
+}
+.gridlist5 {
+  grid-area: e;
+}
+.gridList {
+  padding: 21.5px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 148px;
+}
+
+.gridListBig {
+  padding: 28px 12px;
+}
+
+.gridTitle {
+  font-size: 16px;
+  line-height: 1.25em;
+  color: var(--red-color-E50040);
+}
+.gridDescr {
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.05;
+  color: var(--primary-font-color-3A4551);
+}
+.gridListGrey {
+  background-color: var(--light-grey);
+}
+.gridListRed {
+  background-color: var(--red-color-E50040);
+}
+.gridTextWhite {
+  color: var(--white-color);
+}
+.gridlist5 {
+  background-image: image-set(
+    url('../../images/contract/Image.jpg') 1x,
+    url('../../images/contract/Image@2x.jpg') 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* width: 296px; */
+  height: 256px;
+}
+.gridTitleTop {
+  width: 100px;
+}
+
+.gridDescrBotton {
+  width: 90px;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 140px 0;
+  }
+  .wrapperTitle {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .gridList {
+    padding: 64px 28px 64px 40px;
+    gap: 40px;
+  }
+  .gridlist5 {
+    background-image: url(../../images/contract/contract_desc.jpg);
+    height: 600px;
+    width: 508px;
+  }
+  .contractGrid {
+    grid-template-areas:
+      'a b e e'
+      'c d e e';
+  }
+  .gridTitle {
+    font-size: 38px;
+    line-height: 1.1em;
+    letter-spacing: 0.05;
+    font-weight: 500;
+  }
+  .gridDescr {
+    font-size: 22px;
+    line-height: 1.36em;
+  }
+  .gridDescrBotton {
+    width: 134px;
+  }
+
+  .gridlist5 {
+    padding: 64px 40px 94px 40px;
+  }
+}

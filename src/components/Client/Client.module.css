@@ -1,0 +1,124 @@
+.client {
+  padding-bottom: 264px;
+}
+.wrapper {
+  background-color: var(--light-grey);
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.clientContainer {
+  position: relative;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 32px;
+  width: 250px;
+}
+
+.clientLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  width: 220px;
+  padding: 14px 20px;
+  background-color: var(--red-color-E50040);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+.clientLink svg {
+  width: 32px;
+  fill: var(--white-color);
+}
+.svgDesc {
+  display: none;
+}
+
+.clientImg {
+  position: absolute;
+  right: 50%;
+  top: 167px;
+  transform: translateX(50%);
+}
+
+.clientLink:hover,
+.clientLink:focus {
+  background-color: var(--white-color);
+  color: var(--red-color-E50040);
+  transition: var(--my-transition-timing-function);
+  transition-duration: var(--my-transition-duration);
+  transition-timing-function: var(--my-transition-timing-function);
+}
+.clientLink:hover svg,
+.clientLink:focus svg {
+  fill: var(--red-color-E50040);
+  transition: var(--my-transition-timing-function);
+  transition-duration: var(--my-transition-duration);
+  transition-timing-function: var(--my-transition-timing-function);
+}
+
+@media (min-width: 768px) {
+  .client {
+    padding-bottom: 238px;
+  }
+  .wrapper {
+    padding: 137px 0;
+  }
+  .clientContainer {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .text {
+    font-size: 28px;
+    line-height: 1.14;
+    width: 650px;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  .clientLink {
+    gap: 16px;
+    width: 381px;
+    padding: 21px 40px;
+    justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.1em;
+  }
+  .clientLink svg {
+    width: 100px;
+  }
+  .svgDesc {
+    display: block;
+  }
+  .svgMob {
+    display: none;
+  }
+  .clientContainer {
+    margin: 0;
+    align-items: flex-start;
+  }
+  .clientImg {
+    width: 456px;
+    top: -32px;
+    left: 145%;
+  }
+}

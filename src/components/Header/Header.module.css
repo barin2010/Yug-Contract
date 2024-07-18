@@ -1,0 +1,125 @@
+.headerBaner {
+  background-image: image-set(
+    url('../../images/header/Banner.png') 1x,
+    url('../../images/header/Banner@2x.png') 2x
+  );
+  height: 356px;
+  min-width: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.headerDesc {
+  display: none;
+}
+
+/* .wrapper {
+  height: 356px;
+} */
+.headerNav {
+  padding-top: 28px;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1.5px solid var(--red-color-E50040);
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 24px;
+}
+.headerPromo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 87px;
+  padding-bottom: 81px; */
+  /* flex-grow: 1; */
+}
+
+@media (min-width: 768px) {
+  .headerBaner {
+    background-image: image-set(
+      url('../../images/header/Banner_Desc.jpg') 1x,
+      url('../../images/header/Banner_Desc@2x.jpg') 2x
+    );
+    width: 1920px;
+    height: 634px;
+    padding-bottom: 40px;
+  }
+  .headerMobile {
+    display: none;
+  }
+  .headerDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .headerTop {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 40px;
+
+    border-bottom: 2px solid #e50040;
+  }
+  .headerTopLogo {
+    display: flex;
+  }
+  .headerTopLogo img {
+    width: 331px;
+  }
+
+  .headerDescList {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+  }
+
+  .headerDescLink {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .headerDescLink a {
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.15;
+    color: var(--accent-font-color);
+    text-transform: uppercase;
+  }
+  .headerBotton {
+    width: 100%;
+  }
+  .headerBottonList {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    padding: 42px 178px 18px;
+  }
+
+  .headerBottonLink a {
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.15;
+    color: var(--accent-font-color);
+    text-transform: uppercase;
+  }
+}

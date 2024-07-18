@@ -1,0 +1,139 @@
+.mySwiper {
+  max-width: 360px;
+  height: 258px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.11;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--accent-font-color);
+}
+
+.swiper-col span {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(226, 230, 235, 0.05);
+  -webkit-text-stroke: 0.8px var(--white-color);
+}
+
+.swiper-row {
+  max-width: 270px;
+  display: flex;
+  padding: 0;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-row p {
+  text-align: left;
+
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--accent-font-color);
+}
+
+.swiper-row span {
+  font-weight: 700;
+  font-size: 64.8px;
+  text-transform: uppercase;
+  color: rgba(226, 230, 235, 0.05);
+  -webkit-text-stroke: 0.8px var(--white-color);
+}
+
+.swiper-button-next:after,
+.swiper-button-next:before {
+  display: none;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.4px solid var(--white-color);
+  background-color: inherit;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 8px;
+}
+
+@media (min-width: 768px) {
+  .mySwiper {
+    max-width: 1920px;
+    height: 379px;
+  }
+
+  .swiper-row {
+    max-width: 732px;
+    margin-bottom: 110px;
+  }
+
+  .swiper-row p {
+    font-size: 44px;
+    letter-spacing: 0.05;
+    font-weight: 300;
+  }
+  .swiper-col {
+    font-size: 65px;
+    font-weight: 300;
+  }
+
+  .swiper-row span {
+    font-size: 234px;
+    gap: 50px;
+    letter-spacing: 0.1;
+  }
+
+  .swiper-col span {
+    font-size: 100px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+}

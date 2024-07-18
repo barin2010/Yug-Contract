@@ -1,0 +1,123 @@
+.wrapper {
+  padding-bottom: 72px;
+}
+
+.newsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 42.5px;
+}
+.header {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.09;
+  letter-spacing: 0.05em;
+}
+
+.headerOll {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  padding-right: 38px;
+}
+.headerOll p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.headerOll img {
+  position: absolute;
+
+  right: 0;
+  width: 30px;
+}
+
+.headerOll:hover.headerOll img,
+.headerOll:focus.headerOll img {
+  right: -5px;
+  transition: all ease-in-out 0.5;
+  transition-duration: var(--my-transition-duration);
+}
+
+.headerOll:hover.headerOll p,
+.headerOll:focus.headerOll p {
+  opacity: 0.8;
+  transition: all ease-in 0.5;
+  transition-duration: var(--my-transition-duration);
+}
+
+.newsList {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.newsItem:last-child {
+  display: none;
+}
+.newsItemImg {
+  width: 170px;
+  margin-bottom: 20px;
+}
+.newsItem data {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: var(--middle-grey);
+  margin-bottom: 16px;
+}
+.newsItem p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--dark-grey);
+  width: 130px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 38px;
+    line-height: 1.11;
+  }
+
+  .newsHeader {
+    padding-bottom: 80px;
+  }
+  .headerOll {
+    gap: 16px;
+    padding-right: 122px;
+  }
+  .headerOll p {
+    font-size: 16px;
+    line-height: 1.13;
+  }
+  .headerOll img {
+    width: 100px;
+  }
+  .headerOll:hover.headerOll img,
+  .headerOll:focus.headerOll img {
+    width: 105px;
+  }
+  .newsList {
+    gap: 80px;
+  }
+  .newsItem:last-child {
+    display: block;
+  }
+  .newsItemImg {
+    width: 348px;
+    margin-bottom: 40px;
+  }
+  .newsItem data {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .newsItem p {
+    font-size: 28px;
+    line-height: 1.14;
+    width: 340px;
+  }
+}

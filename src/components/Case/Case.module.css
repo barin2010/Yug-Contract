@@ -1,0 +1,207 @@
+.containerCase {
+  padding-right: 32px;
+}
+
+.wrapper {
+  padding-bottom: 72px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.09em;
+  letter-spacing: 0.05;
+  padding-left: 32px;
+
+  text-align: center;
+}
+.caseDesc {
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.05;
+
+  margin-bottom: 42px;
+  padding-left: 32px;
+}
+.borderBlockDesc {
+  display: none;
+}
+
+.caseBorderRight {
+  display: flex;
+}
+.borderBlockList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36.55px;
+
+  padding: 32px 16px 42px 32px;
+  background-color: var(--light-grey);
+  width: 210px;
+
+  font-size: 16px;
+  line-height: 1.25em;
+  color: var(--red-color-E50040);
+}
+
+.borderBlockList li {
+  color: var(--primary-font-color-3A4551);
+  text-decoration: double;
+}
+
+.borderBlockList li:hover,
+.borderBlockList li:focus {
+  opacity: 0.8;
+  transition-duration: var(--my-transition-duration);
+}
+.borderBlockList b::after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--red-color-E50040);
+}
+
+.caseContract {
+  padding-top: 34px;
+  padding-left: 18px;
+  height: 100%;
+}
+.caseContractTitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+.caseContratDescr {
+  font-size: 14px;
+  line-height: 1.16em;
+  letter-spacing: 0.05;
+  margin-bottom: 20px;
+}
+
+.caseLink {
+  display: flex;
+  gap: 8px;
+
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.15;
+  text-transform: uppercase;
+}
+
+.caseLink img {
+  width: 30px;
+  height: 12px;
+}
+.caseLink:hover img,
+.caseLink:focus img {
+  width: 35px;
+  transition: all ease-in 0.5;
+  transition-duration: var(--my-transition-duration);
+}
+.caseLink:hover,
+.caseLink:focus {
+  opacity: 0.8;
+  transition: all ease-in 0.5;
+  transition-duration: var(--my-transition-duration);
+}
+
+/* .frame {
+  display: flex;
+  flex-grow: 1;
+} */
+.caseWash {
+  width: 100%;
+  height: 100%;
+}
+.caseWashImage {
+  width: 100%;
+  margin-top: 137px;
+}
+
+@media (min-width: 768px) {
+  .containerCase {
+    padding-right: 358px;
+    padding-left: 358px;
+  }
+  .wrapper {
+    padding-bottom: 358px;
+  }
+  .title {
+    font-size: 38px;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  .caseDesc {
+    font-size: 22px;
+    line-height: 1.36em;
+    margin-bottom: 80px;
+  }
+  .caseBorder {
+    position: relative;
+  }
+  .borderBlockDesc {
+    display: flex;
+    width: 100%;
+    height: 768px;
+  }
+  .caseBorderRight {
+    position: absolute;
+    max-width: 856px;
+    display: flex;
+    top: 100px;
+    right: 0;
+  }
+  .borderBlockList {
+    padding: 48px 20px 48px 20px;
+    min-width: 350px;
+
+    font-size: 28px;
+    line-height: 1.14em;
+    font-weight: 500;
+
+    gap: 56px;
+  }
+  .borderBlockList b::after {
+    top: 100px;
+  }
+  .caseContract {
+    padding-top: 48px;
+    padding-left: 50px;
+    background-color: var(--accent-font-color);
+    border: inherit;
+  }
+  .caseContractTitle {
+    font-size: 28px;
+    line-height: 1.14em;
+    margin-bottom: 40px;
+    width: 400px;
+  }
+  .caseContratDescr {
+    font-size: 20px;
+    line-height: 1.36em;
+    margin-bottom: 40px;
+  }
+  .caseLink {
+    gap: 16px;
+
+    font-size: 16px;
+    line-height: 1.12em;
+  }
+  .caseLink img {
+    width: 100px;
+  }
+  .caseLink:hover img,
+  .caseLink:focus img {
+    width: 110px;
+  }
+  .caseWashImage {
+    margin-top: 136px;
+  }
+}

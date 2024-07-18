@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "img": "img",
+    "data": "data",
+    "news": "news"
+  },
+  {
+    "id": "2",
+    "img": "img",
+    "data": "data",
+    "news": "news"
+  },
+  {
+    "id": "3",
+    "img": "img",
+    "data": "data",
+    "news": "news"
+  }
+]

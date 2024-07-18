@@ -1,0 +1,14 @@
+.buttonUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--red-color-E50040);
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
+}

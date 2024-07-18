@@ -1,0 +1,97 @@
+@import './reset.css';
+
+/* 300 */
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro-Light.woff') format('woff'),
+    url('./fonts/GothamPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 400 */
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro-Regular.woff') format('woff'),
+    url('./fonts/GothamPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 500 */
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro-Medium.woff') format('woff'),
+    url('./fonts/GothamPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 700 */
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro-Bold.woff') format('woff'),
+    url('./fonts/GothamPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 700 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.woff') format('woff'),
+    url('./fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* font */
+  --primary-font-Poppins: 'GothamPro';
+  --secondary-font-Raleway: 'Montserrat';
+
+  /* color */
+
+  --primary-font-color-3A4551: #3a4551;
+  --accent-font-color: #ffffff;
+  --red-color-E50040: #e50040;
+  --white-color: #ffff;
+  --light-grey: #e2e6eb;
+  --middle-grey: #949ca5;
+
+  /* transition params */
+  --my-transition-duration: 250ms;
+  --my-transition-timing-function: ease-in-out;
+  --my-transition-delay: 250ms;
+  --my-transition-duration-250: 250ms;
+  --my-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'GothamPro', sans-serif;
+  color: var(--primary-font-color-3A4551);
+  font-weight: 400;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  display: flex;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 358px;
+  }
+}
