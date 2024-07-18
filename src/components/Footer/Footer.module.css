@@ -40,7 +40,6 @@
   align-items: center;
   justify-content: center;
   padding-top: 28px;
-  padding-bottom: 64px;
 
   border-top: 1.5px solid var(--red-color-E50040);
 }
@@ -50,4 +49,99 @@
 .footerMobtext {
   font-size: 8px;
   letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .footerTopMobile {
+    display: none;
+  }
+  .footerBottonMobile {
+    display: none;
+  }
+  .footerTopDesc {
+    display: flex;
+  }
+  .footerBottonDEsc {
+    display: flex;
+  }
+  .wrapper {
+    padding-top: 104px;
+    padding-bottom: 82px;
+  }
+  .footerTopDesc {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .footerTopDEscOne {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24.5px 0;
+  }
+  .totDescText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .topDescList {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerTopDescTwo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 59px;
+    padding-bottom: 42px;
+  }
+  .footerTopDescTwoList {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+  }
+
+  .footerBottonLink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .socialList {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerBottonDEsc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    padding-top: 40px;
+
+    border-top: 2px solid var(--red-color-E50040);
+  }
+  .footerBottonDEsc img {
+    width: 331px;
+  }
+  .footerBottonDEsc p {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+  }
 }

@@ -79,19 +79,26 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   /* margin: 0 auto; */
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
 }
 .container {
+  width: 100%;
   max-width: 360px;
   margin: 0 auto;
   padding: 0 32px;
 }
 @media (min-width: 768px) {
   .container {
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    /* margin-left: 500px; */
     padding: 0 358px;
   }
 }

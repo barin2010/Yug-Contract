@@ -9,6 +9,14 @@ import int from '../../images/footer/In_mob.svg';
 import insta from '../../images/footer/insta_mob.svg';
 import logoMob from '../../images/footer/logo_mob.png';
 
+import ebaDesc from '../../images/footer/eba_desc.svg';
+import tuidDesc from '../../images/footer/tuid_desc.svg';
+import apituDesc from '../../images/footer/apitu_desc.svg';
+import facebookDesc from '../../images/footer/facebook_desc.svg';
+import intDesc from '../../images/footer/In_desc.svg';
+import instaDesc from '../../images/footer/insta_desc.svg';
+import logoDesk from '../../images/footer/logo_desc.png';
+
 const Footer = () => {
   return (
     <section className={css.footer}>
@@ -44,14 +52,76 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className={css.footerTopDesc}>Top</div>
+          <div className={css.footerTopDesc}>
+            <div className={css.footerTopDEscOne}>
+              <p className={css.totDescText}>Участь в асоціаціях:</p>
+              <ul className={css.topDescList}>
+                <li className={css.topDEscItem}>
+                  <img className={css.topDescImg} src={ebaDesc} alt="eba" />
+                </li>
+                <li className={css.topDEscItem}>
+                  <img className={css.topDescImg} src={tuidDesc} alt="tuid" />
+                </li>
+                <li className={css.topDEscItem}>
+                  <img className={css.topDescImg} src={apituDesc} alt="api" />
+                </li>
+              </ul>
+            </div>
+            <div className={css.footerTopDescTwo}>
+              <ul className={css.footerTopDescTwoList}>
+                <li className={css.footerTopDescTwoItem}>
+                  <a className={css.footerBottonLink} href="#!">
+                    Про нас
+                  </a>
+                </li>
+                <li className={css.footerTopDescTwoItem}>
+                  <a className={css.footerBottonLink} href="#!">
+                    Каталог
+                  </a>
+                </li>
+                <li className={css.footerTopDescTwoItem}>
+                  <a className={css.footerBottonLink} href="#!">
+                    Для бізнесу
+                  </a>
+                </li>
+                <li className={css.footerTopDescTwoItem}>
+                  <a className={css.footerBottonLink} href="#!">
+                    Новини
+                  </a>
+                </li>
+                <li className={css.footerTopDescTwoItem}>
+                  <a className={css.footerBottonLink} href="#!">
+                    Контакти
+                  </a>
+                </li>
+              </ul>
+              <ul className={css.socialList}>
+                <li className={css.socialItem}>
+                  <img
+                    className={css.socialImg}
+                    src={facebookDesc}
+                    alt="facebook"
+                  />
+                </li>
+                <li className={css.socialItem}>
+                  <img className={css.socialImg} src={intDesc} alt="int" />
+                </li>
+                <li className={css.socialItem}>
+                  <img className={css.socialImg} src={instaDesc} alt="insta" />
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className={css.footerBottonMobile}>
             <img className={css.logoMob} src={logoMob} alt="logo" />
             <p className={css.footerMobtext}>
               © 2006-2024 Юг-Контракт. Всі права захищено.
             </p>
           </div>
-          <div className={css.footerBottonDEsc}>Botton</div>
+          <div className={css.footerBottonDEsc}>
+            <img src={logoDesk} alt="logo" />
+            <p>© 2006-2024 Юг-Контракт. Всі права захищено.</p>
+          </div>
         </div>
       </div>
     </section>

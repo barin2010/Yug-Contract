@@ -1,5 +1,6 @@
 .containerTicker {
   width: 100%;
+  max-width: 360px;
   overflow: hidden;
   white-space: nowrap;
   display: flex;
@@ -27,6 +28,7 @@
   .containerTicker {
     gap: 49px;
     padding-bottom: 122px;
+    max-width: 1920px;
   }
   .img {
     padding-right: 50px;
