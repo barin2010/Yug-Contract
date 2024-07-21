@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/Yug-Contract/static/css/main.3f10512f.css",
-    "main.js": "/Yug-Contract/static/js/main.5d0b07e2.js",
-    "static/media/Rectangle_desc @2x.png": "/Yug-Contract/static/media/Rectangle_desc @2x.d2b37a60be04c948e487.png",
+    "main.css": "/Yug-Contract/static/css/main.ab40080a.css",
+    "main.js": "/Yug-Contract/static/js/main.32282392.js",
+    "static/media/Rectangle_desc@2x.jpg": "/Yug-Contract/static/media/Rectangle_desc@2x.0057ac26237135db72bc.jpg",
     "static/media/Banner_Desc@2x.jpg": "/Yug-Contract/static/media/Banner_Desc@2x.dd36ebab434580d7e066.jpg",
+    "static/media/CarierDesc@2x.jpg": "/Yug-Contract/static/media/CarierDesc@2x.381ef5d6aa3bcdba7657.jpg",
+    "static/media/VendorDesc@2x.jpg": "/Yug-Contract/static/media/VendorDesc@2x.0640b87c55288d4651e8.jpg",
     "static/media/wash_desc@2x.png": "/Yug-Contract/static/media/wash_desc@2x.3adda62ddb787e6958ea.png",
     "static/media/Rectangle_desc.jpg": "/Yug-Contract/static/media/Rectangle_desc.7fb628b7ae91761a042b.jpg",
     "static/media/desc2x@2x.png": "/Yug-Contract/static/media/desc2x@2x.8565d7c555d6406e7af7.png",
     "static/media/Banner_Desc.jpg": "/Yug-Contract/static/media/Banner_Desc.aa07dc0db832bbaabc87.jpg",
     "static/media/Banner@2x.png": "/Yug-Contract/static/media/Banner@2x.630a923b6d58b605f8df.png",
+    "static/media/CarierDesc.jpg": "/Yug-Contract/static/media/CarierDesc.31a671ba720ab94d5dee.jpg",
+    "static/media/VendorDesc.jpg": "/Yug-Contract/static/media/VendorDesc.8ca8c3f46f03ddcdbcdb.jpg",
     "static/media/news1-desc@2x.jpg": "/Yug-Contract/static/media/news1-desc@2x.0ca84f531e76bb993e4d.jpg",
+    "static/media/CarierMob@2x.jpg": "/Yug-Contract/static/media/CarierMob@2x.b00591483bf803f5a61d.jpg",
     "static/media/mob2x@2x.png": "/Yug-Contract/static/media/mob2x@2x.f519a4a3d54b4b7ab296.png",
     "static/media/news3-desc@2x.jpg": "/Yug-Contract/static/media/news3-desc@2x.47aad428b9233c5024aa.jpg",
     "static/media/wash_desc.jpg": "/Yug-Contract/static/media/wash_desc.8dcf305c8068f51e199d.jpg",
+    "static/media/VendorMob@2x.jpg": "/Yug-Contract/static/media/VendorMob@2x.accda7d97f190148c3da.jpg",
     "static/media/Banner.png": "/Yug-Contract/static/media/Banner.f8d3ad4d2602ccb074f3.png",
     "static/media/wash_mob@2x.jpg": "/Yug-Contract/static/media/wash_mob@2x.39fc73c6fae25d783355.jpg",
     "static/media/Montserrat-Bold.woff": "/Yug-Contract/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
@@ -26,7 +32,9 @@
     "static/media/eba_mob.svg": "/Yug-Contract/static/media/eba_mob.658f8d430b5aa81c0caa5d189463e7e8.svg",
     "static/media/eba_desc.svg": "/Yug-Contract/static/media/eba_desc.5cb0e41931f56fcaee62856f8a7c7eb3.svg",
     "static/media/news3-desc.jpg": "/Yug-Contract/static/media/news3-desc.f28d1442b73fd95e1590.jpg",
+    "static/media/CarierMob.jpg": "/Yug-Contract/static/media/CarierMob.d5c095ce1cd3e2061e57.jpg",
     "static/media/wash_mob.jpg": "/Yug-Contract/static/media/wash_mob.cd7efe029d73cec3f158.jpg",
+    "static/media/VendorMob.jpg": "/Yug-Contract/static/media/VendorMob.9e7936ccb8f273b673a4.jpg",
     "static/media/mob.jpg": "/Yug-Contract/static/media/mob.9775c1f8de79dab565a9.jpg",
     "static/media/news2-desc.jpg": "/Yug-Contract/static/media/news2-desc.bba4948de1b393b851d6.jpg",
     "static/media/Image.jpg": "/Yug-Contract/static/media/Image.def66cd9dcaa19c6c887.jpg",
@@ -66,11 +74,11 @@
     "static/media/facebook_desc.svg": "/Yug-Contract/static/media/facebook_desc.a52e155c3aa16b82ef9e1a38cbe2d24c.svg",
     "static/media/Vector 8.svg": "/Yug-Contract/static/media/Vector 8.a342198cd00ecfabfbb282ba03c591e2.svg",
     "static/media/Burger menu.svg": "/Yug-Contract/static/media/Burger menu.d9bbdb27293a23de2b65f379f6dfe2dd.svg",
-    "main.3f10512f.css.map": "/Yug-Contract/static/css/main.3f10512f.css.map",
-    "main.5d0b07e2.js.map": "/Yug-Contract/static/js/main.5d0b07e2.js.map"
+    "main.ab40080a.css.map": "/Yug-Contract/static/css/main.ab40080a.css.map",
+    "main.32282392.js.map": "/Yug-Contract/static/js/main.32282392.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f10512f.css",
-    "static/js/main.5d0b07e2.js"
+    "static/css/main.ab40080a.css",
+    "static/js/main.32282392.js"
   ]
 }
