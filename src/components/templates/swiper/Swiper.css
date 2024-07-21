@@ -107,23 +107,28 @@
   }
 
   .swiper-row p {
-    font-size: 44px;
+    /* font-size: 44px; */
+    font-size: clamp(1.5rem, 0.667rem + 1.736vi, 2.75rem);
     letter-spacing: 0.05;
     font-weight: 300;
   }
   .swiper-col {
-    font-size: 65px;
+    /* font-size: 65px; */
+    font-size: clamp(1.875rem, 0.417rem + 3.038vi, 4.063rem);
     font-weight: 300;
   }
 
   .swiper-row span {
-    font-size: 234px;
+    /* font-size: 234px; */
+    font-size: clamp(7.25rem, 2.333rem + 10.243vi, 14.625rem);
+
     gap: 50px;
     letter-spacing: 0.1;
   }
 
   .swiper-col span {
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: clamp(2.5rem, 0rem + 5.208vi, 6.25rem);
   }
 
   .swiper-pagination-bullet {

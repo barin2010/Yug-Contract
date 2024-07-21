@@ -3,6 +3,7 @@
 }
 
 .containerCase {
+  margin: 0 auto;
   padding-right: 32px;
   width: 100%;
   max-width: 360px;
@@ -128,8 +129,10 @@
 
 @media (min-width: 768px) {
   .containerCase {
-    padding-right: 358px;
-    padding-left: 358px;
+    /* padding-right: 358px; */
+    /* padding-left: 358px; */
+    padding-right: clamp(4rem, -8.25rem + 25.521vw, 22.375rem);
+    padding-left: clamp(4rem, -8.25rem + 25.521vw, 22.375rem);
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -138,18 +141,23 @@
     padding-bottom: 358px;
   }
   .title {
-    font-size: 38px;
+    /* font-size: 38px; */
+    font-size: clamp(1.375rem, 0.708rem + 1.389vi, 2.375rem);
     line-height: 1.1em;
     margin-bottom: 40px;
     text-align: left;
   }
   .caseDesc {
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: clamp(1rem, 0.75rem + 0.521vi, 1.375rem);
     line-height: 1.36em;
     margin-bottom: 80px;
   }
   .caseBorder {
     position: relative;
+  }
+  .borderBlock {
+    width: clamp(38.75rem, 15.491rem + 48.966vw, 74.25rem);
   }
   .borderBlockDesc {
     display: flex;
@@ -158,38 +166,46 @@
   }
   .caseBorderRight {
     position: absolute;
-    max-width: 856px;
+    /* max-width: 856px; */
+    width: clamp(31.25rem, 16.672rem + 30.69vw, 53.5rem);
     display: flex;
     top: 100px;
     right: 0;
   }
   .borderBlockList {
     padding: 48px 20px 48px 20px;
-    min-width: 350px;
+    /* min-width: 350px; */
+    min-width: clamp(13.75rem, 8.427rem + 11.207vw, 21.875rem);
 
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: clamp(1.375rem, 1.125rem + 0.521vi, 1.75rem);
     line-height: 1.14em;
     font-weight: 500;
 
-    gap: 56px;
+    /* gap: 56px; */
+    gap: clamp(1.875rem, 0.81rem + 2.241vw, 3.5rem);
   }
   .borderBlockList b::after {
     top: 100px;
   }
   .caseContract {
     padding-top: 48px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    padding-left: clamp(1.25rem, 0.022rem + 2.586vw, 3.125rem);
     background-color: var(--accent-font-color);
     border: inherit;
   }
   .caseContractTitle {
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: clamp(1.375rem, 1.125rem + 0.521vi, 1.75rem);
     line-height: 1.14em;
     margin-bottom: 40px;
-    width: 400px;
+    /* width: 400px; */
+    width: clamp(12.5rem, 4.31rem + 17.241vw, 25rem);
   }
   .caseContratDescr {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: clamp(1rem, 0.833rem + 0.347vi, 1.25rem);
     line-height: 1.36em;
     margin-bottom: 40px;
   }
@@ -208,5 +224,6 @@
   }
   .caseWashImage {
     margin-top: 136px;
+    width: clamp(16.25rem, 8.224rem + 16.897vw, 28.5rem);
   }
 }

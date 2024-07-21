@@ -1,8 +1,13 @@
+:root {
+  --background-image: url('../../images/header/Banner.png'); /* Установите начальное значение */
+}
+
 .headerBaner {
-  background-image: image-set(
+  /* background-image: image-set(
     url('../../images/header/Banner.png') 1x,
     url('../../images/header/Banner@2x.png') 2x
-  );
+  ); */
+  background-image: var(--background-image);
   height: 356px;
   min-width: 360px;
   width: 100%;
@@ -50,14 +55,20 @@
 }
 
 @media (min-width: 768px) {
+  :root {
+    --background-image: url('../../images/header/Banner_Desc.jpg');
+  }
+
   .headerBaner {
-    background-image: image-set(
+    background-image: var(--background-image);
+    /* background-image: image-set(
       url('../../images/header/Banner_Desc.jpg') 1x,
       url('../../images/header/Banner_Desc@2x.jpg') 2x
-    );
+    ); */
 
     max-width: 1920px;
     height: 634px;
+
     padding-bottom: 40px;
   }
   .headerMobile {
@@ -84,7 +95,10 @@
     display: flex;
   }
   .headerTopLogo img {
-    width: 331px;
+    min-width: 153px;
+    /* width: clamp(1rem, -2.3211rem + 12.0401vw, 4rem); */
+    /* width: 163px; */
+    /* max-width: 331px; */
   }
 
   .headerDescList {
@@ -96,10 +110,11 @@
   .headerDescLink {
     display: flex;
     align-items: center;
-    gap: 16px;
+    /* gap: 16px; */
+    gap: clamp(1rem, -0.0563rem + 2.2535vw, 4rem);
   }
   .headerDescLink a {
-    font-size: 16px;
+    font-size: clamp(0.625rem, 0.375rem + 0.5208vw, 1rem);
     line-height: 1.12;
     letter-spacing: 0.15;
     color: var(--accent-font-color);
@@ -110,15 +125,22 @@
   }
   .headerBottonList {
     display: flex;
+    margin: 0 auto;
     align-items: center;
     width: 100%;
+    max-width: 848px;
     justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 18px;
+    padding-left: clamp(1rem, -0.0563rem + 25.3521vw, 4rem);
+    padding-right: clamp(1rem, -0.0563rem + 25.3521vw, 4rem);
 
-    padding: 42px 178px 18px;
+    /* padding: 42px 178px 18px; */
   }
 
   .headerBottonLink a {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(0.625rem, 0.375rem + 0.5208vw, 1rem);
     line-height: 1.12;
     letter-spacing: 0.15;
     color: var(--accent-font-color);

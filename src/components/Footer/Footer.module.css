@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--light-grey);
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -87,14 +87,16 @@
   }
   .totDescText {
     font-weight: 500;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(0.75rem, 0.583rem + 0.347vi, 1rem);
     line-height: 1.12;
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
   .topDescList {
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
+    gap: clamp(1.25rem, 0.417rem + 1.736vw, 2.5rem);
     align-items: center;
     justify-content: center;
   }
@@ -109,20 +111,23 @@
   }
   .footerTopDescTwoList {
     display: flex;
-    gap: 41px;
+    /* gap: 41px; */
+    gap: clamp(1.25rem, 0.375rem + 1.823vw, 2.563rem);
     align-items: center;
   }
 
   .footerBottonLink {
     font-weight: 500;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(0.625rem, 0.375rem + 0.521vi, 1rem);
     line-height: 1.12;
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
   .socialList {
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
+    gap: clamp(1.25rem, 0.417rem + 1.736vw, 2.5rem);
     align-items: center;
     justify-content: center;
   }
@@ -138,10 +143,12 @@
     border-top: 2px solid var(--red-color-E50040);
   }
   .footerBottonDEsc img {
-    width: 331px;
+    /* width: 331px; */
+    width: clamp(12.5rem, 7.042rem + 11.372vw, 20.688rem);
   }
   .footerBottonDEsc p {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(0.75rem, 0.583rem + 0.347vi, 1rem);
     letter-spacing: 0.05em;
   }
 }

@@ -6,7 +6,7 @@ import wash2 from '../../images/case/wash_mob@2x.jpg';
 import washDesc from '../../images/case/wash_desc.jpg';
 import washDesc1 from '../../images/case/wash_desc@2x.png';
 import contr from '../../images/case/Rectangle_desc.jpg';
-import contr1 from '../../images/case/Rectangle_desc @2x.png';
+import contr1 from '../../images/case/Rectangle_desc@2x.jpg';
 
 const Case = () => {
   return (
@@ -25,8 +25,7 @@ const Case = () => {
             <div className={css.borderBlock}>
               <img
                 className={css.borderBlockDesc}
-                src={contr}
-                srcSet={`${contr}1x ${contr1}2x`}
+                srcSet={`${contr} 1x, ${contr1} 2x`}
                 alt="contract"
               />
               <div className={css.caseBorderRight}>

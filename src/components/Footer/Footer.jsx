@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import css from './Footer.module.css';
 
 import eba from '../../images/footer/eba_mob.svg';
@@ -119,7 +120,9 @@ const Footer = () => {
             </p>
           </div>
           <div className={css.footerBottonDEsc}>
-            <img src={logoDesk} alt="logo" />
+            <Link to="/">
+              <img src={logoDesk} alt="logo" />
+            </Link>
             <p>© 2006-2024 Юг-Контракт. Всі права захищено.</p>
           </div>
         </div>

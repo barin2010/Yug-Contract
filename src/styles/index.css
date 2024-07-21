@@ -78,13 +78,13 @@ body {
   font-weight: 400;
   background-color: #ffffff;
   /* overflow-x: hidden; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto; */
   /* margin-left: auto;
   margin-right: auto; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   margin-top: 0;
 }
 
@@ -99,10 +99,12 @@ body {
 }
 @media (min-width: 768px) {
   .container {
-    width: 100%;
+    /* width: 100%; */
     max-width: 1920px;
-    margin: 0 auto;
-    /* margin-left: 500px; */
-    padding: 0 358px;
+    /* margin: 0 auto; */
+
+    padding-right: clamp(4rem, -8.25rem + 25.521vw, 22.375rem);
+    padding-left: clamp(4rem, -8.25rem + 25.521vw, 22.375rem);
+    /* padding: 0 358px; */
   }
 }

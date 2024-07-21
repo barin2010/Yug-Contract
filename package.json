@@ -1,5 +1,5 @@
 {
-  "name": "yug-contract",
+  "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://barin2010.github.io/Yug-Contract/",
@@ -8,9 +8,12 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "gsap": "^3.12.5",
+    "nanoid": "^5.0.7",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
+    "router-dom": "^2.2.11",
     "swiper": "^11.1.4",
     "web-vitals": "^2.1.3"
   },

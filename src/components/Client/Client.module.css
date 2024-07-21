@@ -1,6 +1,6 @@
 .client {
   padding-bottom: 264px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .wrapper {
   background-color: var(--light-grey);
@@ -10,7 +10,8 @@
 
 .clientContainer {
   position: relative;
-  max-width: 360px;
+  /* max-width: 360px; */
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -80,7 +81,9 @@
     padding-bottom: 238px;
   }
   .wrapper {
-    padding: 137px 0;
+    /* padding: 137px 0; */
+    padding-top: clamp(5.625rem, 3.667rem + 4.08vw, 8.563rem);
+    padding-bottom: clamp(5.625rem, 3.667rem + 4.08vw, 8.563rem);
   }
   .clientContainer {
     width: 100%;
@@ -89,25 +92,30 @@
     margin: 0 auto;
   }
   .text {
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: clamp(1.25rem, 0.917rem + 0.694vi, 1.75rem);
     line-height: 1.14;
-    width: 650px;
+    /* width: 650px; */
+    width: clamp(20rem, 6.25rem + 28.646vw, 40.625rem);
     margin-bottom: 60px;
     text-align: left;
   }
 
   .clientLink {
     gap: 16px;
-    width: 381px;
+    /* width: 381px; */
+    width: clamp(20rem, 17.458rem + 5.295vw, 23.813rem);
     padding: 21px 40px;
     justify-content: space-between;
 
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(0.75rem, 0.583rem + 0.347vi, 1rem);
     line-height: 1.12;
     letter-spacing: 0.1em;
   }
   .clientLink svg {
-    width: 100px;
+    /* width: 100px; */
+    width: clamp(3.75rem, 2.083rem + 3.472vw, 6.25rem);
   }
   .svgDesc {
     display: block;
@@ -120,8 +128,11 @@
     align-items: flex-start;
   }
   .clientImg {
-    width: 456px;
+    /* width: 456px; */
+    width: clamp(18.75rem, 12.25rem + 13.542vw, 28.5rem);
     top: -32px;
-    left: 145%;
+    /* left: 145%; */
+    right: 0;
+    transform: translateX(0%);
   }
 }

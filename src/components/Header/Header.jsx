@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import css from './Header.module.css';
 import SwiperHeader from 'components/templates/swiper/Swiper';
@@ -10,7 +12,43 @@ import carier from '../../images/icons/carier.svg';
 import vendor from '../../images/icons/vendor.svg';
 import comIn from '../../images/icons/com_in.svg';
 
-const Header = () => {
+const Header = ({
+  backgroundImageMobile,
+  backgroundImageMobile2x,
+  backgroundImageDesktop,
+  backgroundImageDesktop2x,
+  showSwiper,
+}) => {
+  useEffect(() => {
+    const setBackground = () => {
+      const isRetina = window.devicePixelRatio > 1;
+      const isMobile = window.innerWidth < 768;
+      const imageUrl = isMobile
+        ? isRetina
+          ? backgroundImageMobile2x
+          : backgroundImageMobile
+        : isRetina
+        ? backgroundImageDesktop2x
+        : backgroundImageDesktop;
+      document.documentElement.style.setProperty(
+        '--background-image',
+        `url(${imageUrl})`
+      );
+    };
+
+    setBackground();
+    window.addEventListener('resize', setBackground);
+
+    return () => {
+      window.removeEventListener('resize', setBackground);
+    };
+  }, [
+    backgroundImageMobile,
+    backgroundImageMobile2x,
+    backgroundImageDesktop,
+    backgroundImageDesktop2x,
+  ]);
+
   return (
     <div className={css.headerBaner}>
       <div className="container">
@@ -19,26 +57,31 @@ const Header = () => {
             <img src={logo} alt="logo" />
             <img src={burger} alt="menu" />
           </div>
-          <SwiperHeader />
+          {showSwiper && <SwiperHeader />}
         </div>
 
         <div className={css.headerDesc}>
           <div className={css.headerTop}>
             <div className={css.headerTopLogo}>
-              <img src={logoDesc} alt="logo" />
+              <Link to="/">
+                <img src={logoDesc} alt="logo" />
+              </Link>
             </div>
             <ul className={css.headerDescList}>
               <li className={css.headerDescLink}>
                 <img src={carier} alt="carier" />
-                <a href="!#">Кар’єра</a>
+
+                <Link to="/carier">Кар’єра</Link>
               </li>
               <li className={css.headerDescLink}>
                 <img src={vendor} alt="vendor" />
-                <a href="!#">Vendor Relations</a>
+
+                <Link to="/vendor">Vendor Relations</Link>
               </li>
               <li className={css.headerDescLink}>
                 <img src={comIn} alt="comin" />
-                <a href="!#">Вхід для клієнтів</a>
+
+                <Link to="/login">Вхід для клієнтів</Link>
               </li>
             </ul>
           </div>
@@ -63,9 +106,7 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-          <div>
-            <SwiperHeader />
-          </div>
+          <div>{showSwiper && <SwiperHeader />}</div>
         </div>
       </div>
     </div>
