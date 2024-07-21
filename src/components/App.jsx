@@ -6,7 +6,7 @@ import LogIn from 'pages/LogIn';
 import Vendor from 'pages/Vendor';
 import Footer from './Footer/Footer';
 import Up from './Up/Up';
-import Header from './Header/Header';
+// import Header from './Header/Header';
 
 import backgroundHomeMobile from '../images/header/Banner.png';
 import backgroundHomeMobile2x from '../images/header/Banner@2x.png';
