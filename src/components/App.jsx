@@ -23,8 +23,6 @@ import backgroundVendorMobile2x from '../images/header/VendorMob@2x.jpg';
 import backgroundVendorDesctop from '../images/header/VendorDesc.jpg';
 import backgroundVendorDesctop2x from '../images/header/VendorDesc@2x.jpg';
 
-// import HeaderDesc from './HeaderDesc/HeaderDesc';
-
 const backgrounds = {
   home: {
     mobile: backgroundHomeMobile,
@@ -49,7 +47,6 @@ const backgrounds = {
 export const App = () => {
   return (
     <div>
-      {/* <HeaderDesc /> */}
       <Routes>
         <Route
           path="/"
@@ -75,6 +72,7 @@ export const App = () => {
                 backgroundImageMobile2x={backgrounds.carier.mobile2x}
                 backgroundImageDesktop={backgrounds.carier.desktop}
                 backgroundImageDesktop2x={backgrounds.carier.desktop2x}
+                headerTitle="Кар’єра"
               />
               <Carier />
             </>
@@ -96,6 +94,7 @@ export const App = () => {
         />
         <Route path="/login" element={<LogIn />} />
       </Routes>
+
       <Up />
       <Footer />
     </div>

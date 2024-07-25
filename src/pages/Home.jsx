@@ -3,8 +3,6 @@ import React from 'react';
 import Case from 'components/Case/Case';
 import Client from 'components/Client/Client';
 import Contract from 'components/Contract/Contract';
-
-// import Header from 'components/Header/Header';
 import News from 'components/News/News';
 import Ticker from 'components/Ticker/Ticker';
 
@@ -13,10 +11,12 @@ const Home = () => {
     <div>
       <Contract />
       <Case />
-
       <Ticker />
       <News />
-      <Client />
+      <Client
+        textBtn="Стати клієнтом"
+        textClient=" Якщо ви ще не з нами, заповніть анкету і почнемо співпрацю"
+      ></Client>
     </div>
   );
 };

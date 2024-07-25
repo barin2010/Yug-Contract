@@ -1,0 +1,42 @@
+[
+  {
+    "imgMob": "unionMob1.jpg",
+    "imgMob2x": "unionMob1@2x.jpg",
+    "imgDesc": "unionDesc1.jpg",
+    "imgDesc2x": "unionDesc1@2x.jpg",
+    "title": "Студентам пропонуємо",
+    "items": ["Першу роботу", "Навчання", "Проєктну та постійну зайнятість"]
+  },
+  {
+    "imgMob": "unionMob2.jpg",
+    "imgMob2x": "unionMob2@2x.jpg",
+    "imgDesc": "unionDesc2.jpg",
+    "imgDesc2x": "unionDesc2@2x.jpg",
+    "title": "Фахівцям забезпечуємо",
+    "items": ["Розвиток", "Кар’єрне зростання", "Конкурентну оплату праці"]
+  },
+  {
+    "imgMob": "unionMob3.jpg",
+    "imgMob2x": "unionMob3@2x.jpg",
+    "imgDesc": "unionDesc3.jpg",
+    "imgDesc2x": "unionDesc3@2x.jpg",
+    "title": "Експертам надаємо",
+    "items": [
+      "Амбітні задачі",
+      "Свободу самореалізації",
+      "Професійну команду для достягнення мети"
+    ]
+  },
+  {
+    "imgMob": "unionMob4.jpg",
+    "imgMob2x": "unionMob4@2x.jpg",
+    "imgDesc": "unionDesc4.jpg",
+    "imgDesc2x": "unionDesc4@2x.jpg",
+    "title": "Ветеранам допомагаємо",
+    "items": [
+      "Почати нове професійне життя",
+      "Комфортно адаптуватись",
+      "Розвиватись і будувати кар’єру у обраній сфері"
+    ]
+  }
+]

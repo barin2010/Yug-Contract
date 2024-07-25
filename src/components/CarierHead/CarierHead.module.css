@@ -1,0 +1,172 @@
+.wrapper {
+  padding: 72px 0;
+}
+
+.carierHeadBlock {
+  padding-bottom: 72px;
+}
+.carierHeadText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.gridListTop {
+  background-image: image-set(
+    url('../../images/CarierHead/headMobile.jpg') 1x,
+    url('../../images/CarierHead/headMobile@2x.jpg') 2x
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  /* max-width: 296px; */
+  height: 256px;
+
+  padding: 28px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.counter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--accent-font-color);
+}
+
+.descript {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+.bottonRight {
+  display: flex;
+  margin-left: 20%;
+}
+
+.gridList {
+  padding: 37px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 140px;
+}
+.gridList img {
+  width: 100%;
+  height: 100%;
+}
+
+.carierHeadGrid {
+  display: grid;
+  grid-template-areas:
+    'a a'
+    'a a'
+    'b c'
+    'd e'
+    'i f';
+}
+.gridListTop {
+  grid-area: a;
+}
+.backgroundRed {
+  grid-area: b;
+}
+.gridlist3 {
+  grid-area: c;
+}
+.gridlist4 {
+  grid-area: d;
+}
+.gridlist5 {
+  grid-area: e;
+}
+.gridlist6 {
+  grid-area: i;
+  padding: 0;
+}
+.gridlist7 {
+  grid-area: f;
+}
+.backgroundRed {
+  background-color: var(--red-color-E50040);
+}
+.textRed {
+  color: var(--red-color-E50040);
+}
+.textWhite {
+  color: var(--accent-font-color);
+}
+.backgroundGrey {
+  background-color: var(--light-grey);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 140px 0;
+  }
+  .carierHeadBlock {
+    padding-bottom: 140px;
+  }
+  .carierHeadText {
+    /* font-size: 28px;22 */
+    font-size: clamp(1.375rem, 1.125rem + 0.521vi, 1.75rem);
+    line-height: 1.14;
+    text-align: center;
+  }
+  .gridListTop {
+    background-image: image-set(
+      url('../../images/CarierHead/headDesc.jpg') 1x,
+      url('../../images//CarierHead/headDesc@2x.jpg') 2x
+    );
+    /* width: 612px;312 */
+    width: clamp(19.5rem, 7rem + 26.042vw, 38.25rem);
+    /* height: 300px;152 */
+    height: clamp(9.5rem, 3.333rem + 12.847vw, 18.75rem);
+    /* padding-top: 109px; */
+    /* padding-left: 40px;20 */
+    padding-left: clamp(1.25rem, 0.417rem + 1.736vw, 2.5rem);
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    text-align: left;
+  }
+  .bottonRight {
+    margin-left: 0;
+    /* width: 328px;280 */
+    width: clamp(17.5rem, 15.5rem + 4.167vw, 20.5rem);
+  }
+  .carierHeadGrid {
+    grid-template-areas:
+      'a a b c'
+      'd e i f';
+  }
+  .counter {
+    /* font-size: 38px;30 */
+    font-size: clamp(1.875rem, 1.542rem + 0.694vi, 2.375rem);
+    line-height: 1.11;
+    letter-spacing: 0.05em;
+  }
+  .descript {
+    /* font-size: 22px;18 */
+    font-size: clamp(1.125rem, 0.958rem + 0.347vi, 1.375rem);
+    line-height: 1.36;
+  }
+  .gridList {
+    /* padding: 109px 40px;26 18 */
+    /* max-width: 306px; */
+    padding: clamp(1.625rem, -1.833rem + 7.205vw, 6.813rem)
+      clamp(1.125rem, 0.208rem + 1.91vw, 2.5rem);
+    width: clamp(9.75rem, 3.5rem + 13.021vw, 19.125rem);
+    /* max-height: 300px; */
+    height: clamp(9.5rem, 3.333rem + 12.847vw, 18.75rem);
+  }
+  .gridlist6 {
+    padding: 0;
+  }
+}

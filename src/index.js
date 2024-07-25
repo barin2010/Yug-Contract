@@ -6,7 +6,7 @@ import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/Yug-Contract">
       <App styles={{ margin: '0 auto' }} />
     </BrowserRouter>
   </React.StrictMode>

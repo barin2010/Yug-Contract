@@ -18,6 +18,7 @@ const Header = ({
   backgroundImageDesktop,
   backgroundImageDesktop2x,
   showSwiper,
+  headerTitle,
 }) => {
   useEffect(() => {
     const setBackground = () => {
@@ -58,6 +59,9 @@ const Header = ({
             <img src={burger} alt="menu" />
           </div>
           {showSwiper && <SwiperHeader />}
+          {/* <div className={css.headrTitle}>
+            <p>{headerTitle}</p>
+          </div> */}
         </div>
 
         <div className={css.headerDesc}>
@@ -105,6 +109,9 @@ const Header = ({
                 </li>
               </ul>
             </nav>
+            {/* <div className={css.headrTitle}>
+              <p>{headerTitle}</p>
+            </div> */}
           </div>
           <div>{showSwiper && <SwiperHeader />}</div>
         </div>

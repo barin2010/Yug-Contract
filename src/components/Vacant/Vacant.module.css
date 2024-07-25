@@ -1,0 +1,58 @@
+.vacant {
+  background-color: var(--light-grey);
+}
+.wrapper {
+  padding: 72px 0;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.09;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.filterBox {
+  display: flex;
+  max-width: 296px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: right;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.selectBlock {
+  width: 256px;
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-font-color-3A4551);
+}
+.selectBlockImg {
+  width: 34px;
+  margin-right: 11px;
+}
+.selectBlockText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-color);
+  margin-right: auto;
+}

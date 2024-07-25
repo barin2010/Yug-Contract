@@ -1,0 +1,90 @@
+.wrapper {
+  padding-bottom: 42px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+.title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.09;
+  letter-spacing: 0.05em;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+.btnTeam {
+  width: 145px;
+}
+.unionTeamList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+.unionTeamItem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+.ListWrapper {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperItem {
+  position: relative;
+  width: 296px;
+}
+.wrapperImg {
+  /* position: relative; */
+  width: 296px;
+  margin-bottom: 32px;
+}
+.wrapperTitle {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  color: rgba(226, 230, 235, 0.05);
+  -webkit-text-stroke: 0.8px var(--white-color);
+}
+.ListBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  justify-content: center;
+}
+.itemBottom {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  align-self: flex-start;
+  padding-left: 30px;
+}
+.itemBottom::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translateY(50%); */
+  width: 14px;
+  height: 14px;
+  background-color: var(--red-color-E50040);
+}

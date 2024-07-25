@@ -1,0 +1,43 @@
+.btnTransparent {
+  width: 100%;
+}
+
+.btnLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--red-color-E50040);
+}
+.btnImgMob {
+  width: 30px;
+}
+.btnImgDesc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btnLink {
+    font-weight: 500;
+    /* font-size: 16px;12 */
+    font-size: clamp(0.75rem, 0.583rem + 0.347vi, 1rem);
+    line-height: 1.12;
+    /* gap: 16px;8 */
+    gap: clamp(0.5rem, 0.167rem + 0.694vw, 1rem);
+    color: var(--primary-font-color-3A4551);
+  }
+  .btnImgDesc {
+    display: block;
+    /* width: 100px;60 */
+    width: clamp(3.75rem, 2.083rem + 3.472vw, 6.25rem);
+  }
+  .btnImgMob {
+    display: none;
+  }
+}
