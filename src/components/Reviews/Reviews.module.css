@@ -1,0 +1,110 @@
+.reviews {
+  padding-top: 42px;
+  padding-bottom: 72px;
+}
+.reviewTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.reviewImg {
+  width: 60px;
+}
+.reviewText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+.reviewCardBox {
+  display: flex;
+  flex-direction: column;
+}
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.fullName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  width: 150px;
+  text-align: center;
+}
+.fullName span {
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: var(--middle-grey);
+}
+.reviewBtn {
+  margin-top: 42px;
+  background-color: transparent;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  display: flex;
+  width: 15px;
+  cursor: pointer;
+}
+.arrowRight {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 140px 0;
+  }
+  .reviewTextBox {
+    flex-direction: row;
+    gap: 107px;
+    margin-bottom: 40px;
+  }
+  .reviewImg {
+    /* width: 160px;100 */
+    width: clamp(6.25rem, 3.75rem + 5.208vw, 10rem);
+  }
+  .reviewText {
+    /* font-size: 28px;20 */
+    font-size: clamp(1.25rem, 0.917rem + 0.694vi, 1.75rem);
+    line-height: 1.14;
+  }
+  .reviewCardBox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reviewCard {
+    flex-direction: row;
+    gap: 42px;
+    /* padding-left: 267px;210 */
+    padding-left: clamp(13.125rem, 10.75rem + 4.948vw, 16.688rem);
+  }
+  .reviewFace {
+    /* width: 107px;80 */
+    width: clamp(5rem, 3.875rem + 2.344vw, 6.688rem);
+  }
+  .fullName {
+    /* font-size: 22px;18 */
+    font-size: clamp(1.125rem, 0.958rem + 0.347vi, 1.375rem);
+    line-height: 1.36;
+    text-align: left;
+    /* width: 240px;200 */
+    width: clamp(12.5rem, 10.833rem + 3.472vw, 15rem);
+  }
+  .fullName span {
+    /* font-size: 16px;14 */
+    font-size: clamp(0.875rem, 0.792rem + 0.174vi, 1rem);
+  }
+  .arrow {
+    width: 15px;
+  }
+}

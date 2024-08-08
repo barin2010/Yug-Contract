@@ -46,18 +46,29 @@ const UnionTeam = () => {
           <ul className={css.ListWrapper}>
             {educationData.map(educat => (
               <li key={nanoid()} className={css.wrapperItem}>
-                <img
-                  className={css.wrapperImg}
-                  src={getImagePath(educat.imgMob)}
-                  alt="img"
-                  srcSet={`${getImagePath(educat.imgMob)} 1x , ${getImagePath(
-                    educat.imgMob2x
-                  )} 2x`}
-                />
+                <picture>
+                  <source
+                    className={css.wrapperImg}
+                    media="(min-width:768px)"
+                    srcSet={`${getImagePath(educat.imgDesc)} 1x, ${getImagePath(
+                      educat.imgDesc2x
+                    )} 2x`}
+                  />
+                  <img
+                    className={css.wrapperImg}
+                    src={getImagePath(educat.imgMob)}
+                    alt="img"
+                    srcSet={`${getImagePath(educat.imgMob)} 1x , ${getImagePath(
+                      educat.imgMob2x
+                    )} 2x`}
+                  />
+                </picture>
                 <p className={css.wrapperTitle}>{educat.title}</p>
-                <ul key={nanoid()} className={css.ListBottom}>
+                <ul className={css.ListBottom}>
                   {educat.items.map(item => (
-                    <li className={css.itemBottom}>{item}</li>
+                    <li key={nanoid()} className={css.itemBottom}>
+                      {item}
+                    </li>
                   ))}
                 </ul>
               </li>

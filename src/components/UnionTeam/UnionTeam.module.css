@@ -35,7 +35,6 @@
   letter-spacing: 0.05em;
 }
 .ListWrapper {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   gap: 42px;
@@ -47,7 +46,6 @@
   width: 296px;
 }
 .wrapperImg {
-  /* position: relative; */
   width: 296px;
   margin-bottom: 32px;
 }
@@ -87,4 +85,81 @@
   width: 14px;
   height: 14px;
   background-color: var(--red-color-E50040);
+}
+
+@media (min-width: 768px) {
+  .top {
+    display: grid;
+    grid-template-areas:
+      'a . . b'
+      'c c c c';
+  }
+  .title {
+    grid-area: a;
+
+    /* font-size: 38px;28 */
+    font-size: clamp(1.75rem, 1.333rem + 0.868vi, 2.375rem);
+    line-height: 1.11;
+    margin-bottom: 52px;
+  }
+  .btnTeam {
+    grid-area: b;
+  }
+  .description {
+    grid-area: c;
+
+    /* font-size: 22px;16 */
+    font-size: clamp(1rem, 0.75rem + 0.521vi, 1.375rem);
+    line-height: 1.36;
+  }
+  .unionTeamItem {
+    /* font-size: 22px;16 */
+    font-size: clamp(1rem, 0.75rem + 0.521vi, 1.375rem);
+    line-height: 1.36;
+  }
+  .ListWrapper {
+    margin-top: 80px;
+    gap: 0;
+  }
+
+  .wrapperItem {
+    display: flex;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+  }
+  .wrapperImg {
+    display: block;
+    margin-bottom: 0;
+    /* width: 50%;594/313 */
+    width: clamp(19.563rem, 7.854rem + 24.392vw, 37.125rem);
+  }
+
+  .wrapperItem:nth-child(2n) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .wrapperItem:nth-child(2n) p {
+    left: 55%;
+  }
+
+  .wrapperTitle {
+    /* font-size: 74px;36 */
+    font-size: clamp(2.25rem, 0.667rem + 3.299vi, 4.625rem);
+    top: 56px;
+    /* left: 57px;20 */
+    left: clamp(1.25rem, -0.292rem + 3.212vw, 3.563rem);
+  }
+
+  .ListBottom {
+    /* gap: 50px;20 */
+    gap: clamp(1.25rem, 0rem + 2.604vw, 3.125rem);
+    padding-left: 40px;
+    justify-content: left;
+  }
+  .itemBottom {
+    /* font-size: 22px;16 */
+    font-size: clamp(1rem, 0.75rem + 0.521vi, 1.375rem);
+    line-height: 1.36;
+  }
 }

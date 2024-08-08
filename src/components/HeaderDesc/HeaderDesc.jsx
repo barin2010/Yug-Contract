@@ -22,17 +22,16 @@ const HeaderDesc = () => {
             <li className={css.headerDescLink}>
               <img src={carier} alt="carier" />
 
-              {/* <a href="!#">Кар’єра</a> */}
               <Link to="/carier">Кар’єра</Link>
             </li>
             <li className={css.headerDescLink}>
               <img src={vendor} alt="vendor" />
-              {/* <a href="!#">Vendor Relations</a> */}
+
               <Link to="/vendor">Vendor Relations</Link>
             </li>
             <li className={css.headerDescLink}>
               <img src={comIn} alt="comin" />
-              {/* <a href="!#">Вхід для клієнтів</a> */}
+
               <Link to="/login">Вхід для клієнтів</Link>
             </li>
           </ul>

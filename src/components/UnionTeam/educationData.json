@@ -1,9 +1,9 @@
 [
   {
     "imgMob": "unionTeamMob1.jpg",
-    "imgMob2x": "/unionTeamMob1@2x.jpg",
-    "imgDesc": "",
-    "imgDesc2x": "",
+    "imgMob2x": "unionTeamMob1@2x.jpg",
+    "imgDesc": "unionTeamDesc1.jpg",
+    "imgDesc2x": "unionTeamDesc1@2x.jpg",
     "title": "Навчання",
     "items": [
       "Зовнішні навчальні програми",
@@ -15,16 +15,16 @@
   {
     "imgMob": "unionTeamMob2.jpg",
     "imgMob2x": "unionTeamMob2@2x.jpg",
-    "imgDesc": "",
-    "imgDesc2x": "",
+    "imgDesc": "unionTeamDesc2.jpg",
+    "imgDesc2x": "unionTeamDesc2@2x.jpg",
     "title": "Розвиток",
     "items": ["Особистий розвиток", "Професійне зростання", "Побудова кар’єри"]
   },
   {
     "imgMob": "unionTeamMob3.jpg",
     "imgMob2x": "unionTeamMob3@2x.jpg",
-    "imgDesc": "",
-    "imgDesc2x": "",
+    "imgDesc": "unionTeamDesc3.jpg",
+    "imgDesc2x": "unionTeamDesc3@2x.jpg",
     "title": "Відпочинок",
     "items": [
       "Спортивні заходи",

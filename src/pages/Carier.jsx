@@ -5,6 +5,7 @@ import Values from 'components/Values/Values';
 import Union from 'components/Union/Union';
 import UnionTeam from 'components/UnionTeam/UnionTeam';
 import Vacant from 'components/Vacant/Vacant';
+import Reviews from 'components/Reviews/Reviews';
 
 const Carier = () => {
   return (
@@ -14,6 +15,7 @@ const Carier = () => {
       <Union />
       <UnionTeam />
       <Vacant />
+      <Reviews />
       <Client
         textBtn="Стати клієнтом"
         textClient="Не знайшли потрібної вакансії? Все одно розкажіть про себе.
